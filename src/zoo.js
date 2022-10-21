@@ -108,8 +108,41 @@ function increasePrices(percentage) {
   prices.Senior = Math.round((prices.Senior * (1 + (percentage / 100))) * 100) / 100;
 }
 
+const createModelEmployee = (employee) => {
+  const object = {};
+  const fullName = `${employee.firstName} ${employee.lastName}`;
+  object[fullName] = [];
+  employee.responsibleFor.forEach((res) => {
+    const { name } = data.species.find(({ id }) => id === res);
+    object[fullName].push(name);
+  });
+  return object;
+};
+
+const findById = (id) => {
+  const find = data.employees.find((employee) => employee.id === id);
+  return createModelEmployee(find);
+};
+
+const findByName = (name) => {
+  const find = data.employees.find(({ firstName, lastName }) => firstName === name
+    || lastName === name);
+  return createModelEmployee(find);
+};
+
 function getEmployeeCoverage(idOrName) {
-  // seu código aqui
+  if (!idOrName) {
+    const object = {};
+    data.employees.forEach((employee) => {
+      Object.assign(object, createModelEmployee(employee));
+    });
+    return object;
+  }
+
+  if (idOrName.id) {
+    return findById(idOrName);
+  }
+  return findByName(idOrName);
 }
 
 module.exports = {

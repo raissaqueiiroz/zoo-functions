@@ -346,13 +346,3 @@ Você pode ler mais sobre a [função construtora **Error**, neste link.](https:
 ## Créditos
 
 - Arquivos de Teste e Configurações desenvolvidos pela [Trybe](!https://github.com/tryber) <img src="https://avatars.githubusercontent.com/u/55410300?s=60&v=4" weight=20 width= 20 >
-
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você;
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
