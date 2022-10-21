@@ -1,13 +1,10 @@
 # Repositório do projeto de ES6 e Higher Order Functions!
 
-##
+[![wakatime](https://wakatime.com/badge/github/raissaqueiiroz/raissaqueiiroz.svg)](https://wakatime.com/badge/github/raissaqueiiroz/raissaqueiiroz)
 
 <div align='center'>
 <img src='https://miro.medium.com/max/1400/1*bst7xil5TzX7Y9TguSwFpQ.gif' weight= 300 height= 300>
 </div>
-
-##
-
 ---
 
 ## Habilidades
