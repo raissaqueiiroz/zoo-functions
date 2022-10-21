@@ -139,9 +139,7 @@ function getEmployeeCoverage(idOrName) {
     return object;
   }
 
-  if (idOrName.id) {
-    return findById(idOrName);
-  }
+  if (idOrName.length > 25) return findById(idOrName);
   return findByName(idOrName);
 }
 
